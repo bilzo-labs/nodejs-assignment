@@ -7,7 +7,7 @@
     - Proper email ✅
     - Email shouldn't already exist ✅
 5. Store this data in user table. Make sure to encrypt the password. ✅
-6. Please create an endpoint called `/login`:
+6. Please create an endpoint called `/login`: ✅
  - It should follow the simplest login method, if I give correct email and password, it will return me a JWT Token. Wrong credentials will result in an error. 
  - Please don't use passport JS or any assisting libraries. 
 7. Please create an endpoint called /dashboard, this will be an authenticated endpoint, if I don't pass a valid JWT Token it will return a 401. Else a 200 with some message. 
