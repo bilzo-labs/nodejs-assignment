@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
     let check = await bcrypt.compare(password, user.password);
     if (check) {
         const secret = process.env.JWT_SECRET;
-        let id = user._id.toString();
+        let id = user._id;
         const token = jwt.sign({id: id}, secret, {
             expiresIn: "30d"
         });
