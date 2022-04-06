@@ -10,7 +10,7 @@
 6. Please create an endpoint called `/login`: ✅
  - It should follow the simplest login method, if I give correct email and password, it will return me a JWT Token. Wrong credentials will result in an error. 
  - Please don't use passport JS or any assisting libraries. 
-7. Please create an endpoint called /dashboard, this will be an authenticated endpoint, if I don't pass a valid JWT Token it will return a 401. Else a 200 with some message. 
+7. Please create an endpoint called /dashboard, this will be an authenticated endpoint, if I don't pass a valid JWT Token it will return a 401. Else a 200 with some message. ✅
 8. You can add as many packages as you like. Feel free to modify our code too.
 9. You should use industry standard, best code practices.
 10. It is up to you how you will implement the business logic.
