@@ -1,3 +1,5 @@
+require('dotenv').config();
+require('./models/dbinit');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
