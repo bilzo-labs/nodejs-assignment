@@ -9,6 +9,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var createUserRouter = require('./routes/createAccount');
 var loginRouter = require('./routes/login');
+const authorize = require('./middlewares/auth');
+var dashboardRouter = require('./routes/dashboard');
 
 var app = express();
 
@@ -22,5 +24,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/create-user', createUserRouter);
 app.use('/login', loginRouter);
+app.use('/dashboard', authorize, dashboardRouter);
 
 module.exports = app;
