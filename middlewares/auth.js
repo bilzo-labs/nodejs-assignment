@@ -10,12 +10,8 @@ const authorize = async (req, res, next) => {
     try {
         const secret = process.env.JWT_SECRET;
         const resp = jwt.verify(token, secret);
-        const user = await users.findOne({ _id: resp.id });
-        if (user) {
-            next();
-        } else {
-            return res.status(401).json({ success: false, error: "Unauthorized" });
-        }
+        req.body.info = resp;
+        next();
     } catch (e) {
         return res.status(401).json({ success: false, error: "Unauthorized" });
     }
