@@ -1,16 +1,16 @@
 # Assignment Details
 
-1. Please fork this repository and follow Project setup instructions listed below to install it locally.
-2. Copy of a user should be stored in DB, you can use any database for this, our preference is MongoDB. 
-3. Please create an endpoint called `/create-account`
+1. Please fork this repository and follow Project setup instructions listed below to install it locally. ✅
+2. Copy of a user should be stored in DB, you can use any database for this, our preference is MongoDB. ✅
+3. Please create an endpoint called `/create-account` ✅
 4. It should take email and password and registers with some basic validation like
-    - Proper email
-    - Email shouldn't already exist
-5. Store this data in user table. Make sure to encrypt the password. 
-6. Please create an endpoint called `/login`:
+    - Proper email ✅
+    - Email shouldn't already exist ✅
+5. Store this data in user table. Make sure to encrypt the password. ✅
+6. Please create an endpoint called `/login`: ✅
  - It should follow the simplest login method, if I give correct email and password, it will return me a JWT Token. Wrong credentials will result in an error. 
  - Please don't use passport JS or any assisting libraries. 
-7. Please create an endpoint called /dashboard, this will be an authenticated endpoint, if I don't pass a valid JWT Token it will return a 401. Else a 200 with some message. 
+7. Please create an endpoint called /dashboard, this will be an authenticated endpoint, if I don't pass a valid JWT Token it will return a 401. Else a 200 with some message. ✅
 8. You can add as many packages as you like. Feel free to modify our code too.
 9. You should use industry standard, best code practices.
 10. It is up to you how you will implement the business logic.
